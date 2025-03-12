@@ -121,6 +121,13 @@ on boot
     chown system system /dev/stune/top-app/cgroup.procs
     chmod 0666 /dev/stune/background/cgroup.procs
     chmod 0666 /dev/stune/top-app/cgroup.procs
+	
+	# Gamebar
+	chown system graphics /sys/class/drm/sde-crtc-0/measured_fps
+    chmod 0660 /sys/class/drm/sde-crtc-0/measured_fps
+
+    chown system system /sys/class/power_supply/battery/temp
+    chmod 0660 /sys/class/power_supply/battery/temp
 
 on charger
     chown system system /sys/class/backlight/panel0-backlight/brightness
