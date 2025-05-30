@@ -12,6 +12,7 @@ allow hal_power_default {
   vendor_sysfs_devfreq
   sysfs_msm_subsys
   sysfs_touchpanel
+  sysfs_thermal
 }:dir search;
 
 allow hal_power_default {
@@ -21,6 +22,7 @@ allow hal_power_default {
   vendor_sysfs_kgsl
   vendor_sysfs_scsi_host
   sysfs_touchpanel
+  sysfs_thermal
 }:{
   file
   lnk_file
