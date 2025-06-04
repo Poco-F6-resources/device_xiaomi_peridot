@@ -196,10 +196,6 @@
                 android:resource="@string/game_bar_summary" />
         </activity>
 
-        <!-- GameBar AppSelector -->
-        <activity android:name=".gamebar.GameBarAppSelectorActivity" />
-        <activity android:name=".gamebar.GameBarAppRemoverActivity" />
-
         <!-- GameBar Overlay Tile Service -->
         <service
             android:name=".gamebar.GameBarTileService"
@@ -232,5 +228,10 @@
                 <category android:name="android.intent.category.DEFAULT" />
              </intent-filter>
         </receiver>
+		
+		 <activity
+            android:name=".gamebar.GameBarPerAppConfigActivity"
+            android:exported="false"
+            android:theme="@style/Theme.SubSettingsBase" /> 
     </application>
 </manifest>
