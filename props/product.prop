@@ -3,3 +3,7 @@ audio.offload.min.duration.secs=30
 
 # Media
 media.stagefright.audio.deep=true
+
+# RKPD
+remote_provisioning.enable_rkpd=true
+remote_provisioning.hostname=remoteprovisioning.googleapis.com
