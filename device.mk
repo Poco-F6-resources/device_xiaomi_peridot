@@ -266,6 +266,9 @@ PRODUCT_COPY_FILES += \
 # Lineage Health
 PRODUCT_PACKAGES += \
     vendor.lineage.health-service.default
+	
+# Logging
+include $(LOCAL_PATH)/configs/logging.mk
 
 $(call soong_config_set,lineage_health,charging_control_supports_bypass,false)
 $(call soong_config_set,lineage_health,fast_charge_node,/sys/class/qcom-battery/fastcharge_enable)
