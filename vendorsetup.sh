@@ -6,20 +6,20 @@ echo "Cloning All resources"
 echo "Cloning vendor tree"
 git clone -b lineage-23.0 --depth 1 https://github.com/Poco-F6-resources/proprietary_vendor_xiaomi_peridot.git vendor/xiaomi/peridot
 
+echo "Cloning Old Kernel sources"
 # Kernel sources
-echo "Cloning kernel sources"
-git clone -b lineage-23.0 --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
+git clone -b lineage-23.0-old --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635.git kernel/xiaomi/sm8635
 
 rm -rf kernel/xiaomi/sm8635-modules
-git clone -b lineage-23.0 --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
+git clone -b lineage-23.0-old --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635-modules.git kernel/xiaomi/sm8635-modules
 
 rm -rf kernel/xiaomi/sm8635-devicetrees
-git clone -b lineage-23.0 --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
+git clone -b lineage-23.0-old --depth 1 https://github.com/Poco-F6-resources/android_kernel_xiaomi_sm8635-devicetrees.git kernel/xiaomi/sm8635-devicetrees
 
 # Hardware xiaomi
-echo "Cloning hardware xiaomi"
+echo "Cloning hardware xiaomi test branch"
 rm -rf hardware/xiaomi
-git clone -b lineage-23.0 https://github.com/Poco-F6-resources/android_hardware_xiaomi.git hardware/xiaomi
+git clone -b test https://github.com/Poco-F6-resources/android_hardware_xiaomi.git hardware/xiaomi
 
 # Dolby
 echo "Cloning XiaomiDolby"

@@ -125,8 +125,8 @@ TARGET_KERNEL_CONFIG := \
 
 BOARD_KERNEL_CMDLINE := \
     video=vfb:640x400,bpp=32,memsize=3072000 \
-    swinfo.fingerprint=peridot:$(CLOVER_VERSION) \
-    mtdoops.fingerprint=peridot:$(CLOVER_VERSION)
+    swinfo.fingerprint=peridot:$(LINEAGE_VERSION) \
+    mtdoops.fingerprint=peridot:$(LINEAGE_VERSION)
 
 BOARD_KERNEL_CMDLINE += androidboot.init_fatal_reboot_target=recovery
 
@@ -186,7 +186,7 @@ TARGET_KERNEL_EXT_MODULES := \
 CAMERA_PACKAGE_NAME := com.android.camera
 
 # Partitions
--include vendor/clover/config/BoardConfigReservedSize.mk
+-include vendor/infinity/config/BoardConfigReservedSize.mk
 
 BOARD_BOOTIMAGE_PARTITION_SIZE := 100663296
 BOARD_DTBOIMG_PARTITION_SIZE := 25165824
