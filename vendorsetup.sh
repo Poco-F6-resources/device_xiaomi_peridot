@@ -4,7 +4,7 @@ echo "Cloning All resources"
 
 # Vendor
 echo "Cloning vendor tree"
-git clone -b lineage-23.0 https://github.com/Poco-F6-resources/proprietary_vendor_xiaomi_peridot.git vendor/xiaomi/peridot
+git clone -b lineage-23.0 --depth 1 https://github.com/Poco-F6-resources/proprietary_vendor_xiaomi_peridot.git vendor/xiaomi/peridot
 
 # Kernel sources
 echo "Cloning kernel sources"
@@ -24,3 +24,9 @@ git clone -b lineage-23.0 https://github.com/Poco-F6-resources/android_hardware_
 # Dolby
 echo "Cloning XiaomiDolby"
 git clone -b lineage-23.0 https://github.com/Poco-F6-resources/android_packages_apps_XiaomiDolby.git packages/apps/XiaomiDolby
+
+# Mi Cam
+echo "cloning Mi Cam"
+# Miuicamera
+git clone -b --depth 1 https://github.com/peridot-hyperos-2/vendor-xiaomi-peridot-miuicamera vendor/xiaomi/peridot-miuicamera
+git clone -b aosp-15-qpr2  --depth 1 https://github.com/F6-test/device_xiaomi_peridot-miuicamera.git device/xiaomi/peridot-miuicamera
