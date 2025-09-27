@@ -4,6 +4,8 @@ allow hal_power_default sysfs:file rw_file_perms;
 allow hal_power_default sysfs:file open;
 allow hal_power_default sysfs_gpu:file { read write open };
 allow hal_power_default sysfs_gpu:dir { search };
+allow hal_power_default fwk_stats_service:service_manager find;
+allow hal_power_default hal_thermal_default:binder { call transfer };
 
 r_dir_file(hal_power_default, input_device)
 
