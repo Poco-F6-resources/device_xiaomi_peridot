@@ -28,5 +28,5 @@ git clone -b lineage-23.0 https://github.com/Poco-F6-resources/android_packages_
 # Mi Cam
 echo "cloning Mi Cam"
 # Miuicamera
-git clone -b --depth 1 https://github.com/peridot-hyperos-2/vendor-xiaomi-peridot-miuicamera vendor/xiaomi/peridot-miuicamera
-git clone -b aosp-15-qpr2  --depth 1 https://github.com/F6-test/device_xiaomi_peridot-miuicamera.git device/xiaomi/peridot-miuicamera
+git clone -b aosp-15-qpr2 --depth 1 https://github.com/F6-test/vendor-xiaomi-peridot-miuicamera.git vendor/xiaomi/peridot-miuicamera
+git clone -b aosp-15-qpr2 --depth 1 https://github.com/F6-test/device_xiaomi_peridot-miuicamera.git device/xiaomi/peridot-miuicamera
