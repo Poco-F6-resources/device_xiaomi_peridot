@@ -651,13 +651,13 @@
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
       "Node": "CPULittleClusterMinFreq",
-      "Duration": 100,
+      "Duration": 80,
       "Value": "1228800"
     },
     {
       "PowerHint": "DISPLAY_UPDATE_IMMINENT",
       "Node": "CPUBWMinFreq",
-      "Duration": 100,
+      "Duration": 80,
       "Value": "1555000"
     },
     {
