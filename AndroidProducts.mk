@@ -5,4 +5,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/clover_peridot.mk
+    $(LOCAL_DIR)/infinity_peridot.mk

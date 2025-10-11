@@ -20,6 +20,13 @@ ro.media.xml_variant.profiles=_cliffs_v0
 # LMK
 ro.config.low_ram=false
 
+# About phone
+ro.product.marketname=Poco F6
+ro.infinity.soc=Snapdragon 8s Gen 3
+ro.infinity.battery=5000 mah
+ro.infinity.display=1220 x 2712, 120 Hz
+ro.infinity.camera=50/8MP & 20MP
+
 # Logging
 persist.vendor.camera.logInfoMask=false
 persist.log.tag.ACDB-LOADER=S
