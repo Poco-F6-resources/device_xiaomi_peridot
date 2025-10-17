@@ -10,7 +10,7 @@ NC="\033[0m" # No Color
 
 fatal() {
     echo -e "${RED}[FATAL] $1${NC}"
-    exit 1
+    return 1
 }
 
 info() {
@@ -64,3 +64,5 @@ info "Cloning Miuicamera device"
 git clone -b aosp-15-qpr2 --depth 1 https://github.com/F6-test/device_xiaomi_peridot-miuicamera.git device/xiaomi/peridot-miuicamera || fatal "Device miuicamera clone failed!"
 
 success "All resources cloned successfully!"
+
+return 0
