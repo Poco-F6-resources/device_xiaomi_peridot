@@ -7,3 +7,6 @@ allow system_server {
   proc_uptime proc_diskstats proc_interrupts proc_cgroups 
   proc_swaps proc_zoneinfo proc_buddyinfo proc_bootconfig 
 }:file getattr;
+
+allow system_server mediaserver_tmpfs:file write;
+allow system_server self:capability sys_module;
